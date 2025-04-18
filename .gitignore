@@ -1,0 +1,8 @@
+# 忽略 include 目录
+include/
+
+# 忽略 VS Code 配置文件夹
+.vscode/
+
+# 忽略 targe目录
+target/
