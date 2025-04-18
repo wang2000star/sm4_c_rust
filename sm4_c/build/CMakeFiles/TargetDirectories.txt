@@ -1,6 +1,0 @@
-/home/wfz/sm4_pro/sm4_c/build/CMakeFiles/Symmetric.dir
-/home/wfz/sm4_pro/sm4_c/build/CMakeFiles/edit_cache.dir
-/home/wfz/sm4_pro/sm4_c/build/CMakeFiles/rebuild_cache.dir
-/home/wfz/sm4_pro/sm4_c/build/tests/CMakeFiles/test.dir
-/home/wfz/sm4_pro/sm4_c/build/tests/CMakeFiles/edit_cache.dir
-/home/wfz/sm4_pro/sm4_c/build/tests/CMakeFiles/rebuild_cache.dir

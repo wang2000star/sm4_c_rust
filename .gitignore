@@ -1,5 +1,5 @@
-# 忽略 include 目录
-include/
+# 忽略 build 目录
+build/
 
 # 忽略 VS Code 配置文件夹
 .vscode/

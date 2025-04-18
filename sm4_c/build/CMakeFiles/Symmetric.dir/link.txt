@@ -1,2 +1,0 @@
-/usr/bin/ar qc libSymmetric.a CMakeFiles/Symmetric.dir/src/sm4.c.o
-/usr/bin/ranlib libSymmetric.a
