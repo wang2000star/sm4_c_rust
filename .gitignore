@@ -6,3 +6,6 @@ include/
 
 # 忽略 targe目录
 target/
+
+# 忽略 temp目录
+temp/
