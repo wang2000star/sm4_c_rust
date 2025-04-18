@@ -1,2 +1,3 @@
 # sm4_c_rust
-perform by c and rust
+
+SM4 performed by C and Rust
