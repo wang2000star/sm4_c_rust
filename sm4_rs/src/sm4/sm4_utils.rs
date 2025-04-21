@@ -102,7 +102,7 @@ pub fn sm4key_expansion(mode : bool,sm4_key : &mut Vec<u8>) -> Vec<u32>{
         // 轮密钥异或，buffer[4+r]=buffer[r+1] ^ buffer[r+2] ^ buffer[r+3] ^ CK[r]
         buffer[4 + r] = buffer[r + 1] ^ buffer[r + 2] ^ buffer[r + 3] ^ ck[r];
         // s盒，分为4个字节，分别调用substitute
-        sub_word(buffer[4 + r]);
+        buffer[4 + r] = sub_word(buffer[4 + r]);
         // 线性变换，循环左移位0,13,23再异或
         buffer[4 + r] = buffer[4 + r] ^ buffer[4 + r].rotate_left(13) ^ buffer[4 + r].rotate_left(23);
         // 异或，buffer[4+r] = buffer[4+r] ^ buffer[r];
@@ -133,7 +133,7 @@ pub fn sm4_enc_dec(enc_key : Vec<u32>, plaintext : [u8; 16]) -> [u8;16]{
         // 轮密钥异或，buffer[4+r]=buffer[r+1] ^ buffer[r+2] ^ buffer[r+3] ^ enc_key[r]
         buffer[4 + r] = buffer[r + 1] ^ buffer[r + 2] ^ buffer[r + 3] ^ enc_key[r];
         // s盒，分为4个字节，分别调用substitute
-        sub_word(buffer[4 + r]);
+        buffer[4 + r] = sub_word(buffer[4 + r]);
         // 线性变换，循环左移位0,2,10,18,24再异或
         buffer[4 + r] = buffer[4 + r] ^ buffer[4 + r].rotate_left(2) ^ buffer[4 + r].rotate_left(10) ^ buffer[4 + r].rotate_left(18) ^ buffer[4 + r].rotate_left(24);
         // 异或，buffer[4+r] = buffer[4+r] ^ buffer[r];
